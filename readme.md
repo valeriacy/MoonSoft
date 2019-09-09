@@ -1,40 +1,48 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+REQUISITOS
+==============
+- xampp 
+- [composer](https://getcomposer.org/download/)
+- [visual code](https://code.visualstudio.com/download)
+- [git](https://git-scm.com/downloads)
+- [git extensions*](https://sourceforge.net/projects/gitextensions/)
+- [Cuenta en Github](https://github.com/join?source=header-home)
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+PARA EMPEZAR A USAR
+==================
+1. git clone https://github.com/valeriacy/MoonSoft.git
+2. cd moonSoft
+3. composer install
+4. copy .env.example .env ..
+5. En el nuevo archivo creado .env configurar la conexion con mysql (nombre de la BD, usuario y contraseña) ..
+6. php artisan migrate ..
+7. php artisan key:generate
+8. **Para levantar el servidor:** php artisan serve
 
-## About Laravel
+PASOS y COMANDOS PARA EMPEZAR EL PROYECTO DE 0 (FINES DEMOSTRATIVOS NO EJECUTARLOS)
+==================
+1. Creacion Proyecto.- composer create-project laravel/laravel NombreProyecto 5.4
+2. Configurar .env en el nuevo proyecto, para las credenciales de MySql
+3. Migracion, para el modelo, 'php artisan make:migration NombreMigracion'
+4. En la migracion creada poner el codigo para crear las tablas. Documentacion ejemplo:
+	-https://medium.com/@david.quezada.m/tutorial-api-restful-con-laravel-5-6-en-menos-de-1000-palabras-e14249fef9a9
+	-https://laravel.com/docs/5.8/migrations#creating-tables
+5. Hacer efectiva la migracion: 'php artisan migrate'.
+6. Creacion de una clase modelo, que sera mapeada con la tabla del mismo nombre: 'php artisan make:model NombreModelo'
+7. Creacion del controlador: 'php artisan make:controller NombreControlador -r'
+8. Ir al archivo /route/api.php, agregar las configuraciones de mapeado
+	Route::resource('NombreModelo', 'NombreControlador');
+9. Ejecutar php artisan route:list y revisar si se agregaron correctamente las rutas
+10. Codificar el controlador.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+ENLACES DE UTILIDAD
+=============
+- Ejemplo de Api Rest:https://medium.com/@david.quezada.m/tutorial-api-restful-con-laravel-5-6-en-menos-de-1000-palabras-e14249fef9a9
+- Codigo ejemplo para las migraciones:https://laravel.com/docs/5.8/migrations#creating-tables
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+* opcional
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
+COMANDOS PARA EJECUTAR *SEEDS*
+=============
 
-## Learning Laravel
-
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
-
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+- composer dump-autoload
+- php artisan db:seed

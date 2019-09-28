@@ -9,6 +9,8 @@ REQUISITOS
 
 PARA EMPEZAR A USAR
 ==================
+Desde un CMD (windows), realizar lo siguiente:
+
 1. git clone https://github.com/valeriacy/MoonSoft.git
 2. cd moonSoft/proyecto
 3. composer install

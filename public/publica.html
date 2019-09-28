@@ -1,21 +1,56 @@
-<div class="jumbotron text-center">
-    <h1>My First Bootstrap Page</h1>
-    <p>Resize this responsive page to see the effect!</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Mensajero</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <div class="jumbotron text-center">
+    <img src="../imagenes/logo.jpg" class="img-thumbnail img-responsive" alt="Cinque Terre"
+    width="304" height="236">
+    <h1>Mensajero</h1>
   </div>
-  
+</head>
+
+<body>
+
+  <div class="container">
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="active"><a href="#">Escribir Carta</a></li>
+      <li><a href="#">Sobre nosotros</a></li>
+      <li><a href="#">Boletines</a></li>
+      <li><a href="login.html">Iniciar sesion</a></li>
+    </ul>
+  </div>
+  <hr />
   <div class="container">
     <div class="row">
-      <div class="col-sm-4">
-        <h3>Column 1</h3>
-        <p>Lorem ipsum dolor..</p>
+      <div class="col-sm-4 col-lg-2 col-lg-offset-1">
+        <img src="../imagenes/escritor.jpg" class="img-circle img-responsive" alt="Cinque Terre"
+        width="200" height="236">
+        <div>
+          <a href="inicioNinho.html" data-tonggle="tooltip" title ="comencemos a escribir"><button type="button" class="btn btn-warning btn-lg">Escribir una carta</button></a>
+        </div>
       </div>
-      <div class="col-sm-4">
-        <h3>Column 2</h3>
-        <p>Lorem ipsum dolor..</p>
-      </div>
-      <div class="col-sm-4">
-        <h3>Column 3</h3>
-        <p>Lorem ipsum dolor..</p>
+      <div class="col-sm-4 col-lg-offset-5 well well-lg">
+        <blockquote class="blockquote-reverse">
+          LOS NIÑOS SON UNA GRAN FUENTE DE IMAGINACION INIGUALABLE, ES POR ESO QUE QUEREMOS BRINDARLES
+          UN SITIO DONDE ELLOS PUEDAN PLASMAR TODA ESA IMAGINACION.
+          BIENVENIDOS!, HORA DE ESCRIBIR
+        </blockquote>
       </div>
     </div>
   </div>
+  <footer class="page-footer font-small blue">
+      <div class="footer-copyright text-center py-3">© 2019 Copyright:
+        <a href="#"> MoonSoft.SRL</a>
+      </div>
+      
+    
+    </footer>
+</body>
+
+</html>

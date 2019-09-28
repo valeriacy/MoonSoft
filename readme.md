@@ -10,11 +10,11 @@ REQUISITOS
 PARA EMPEZAR A USAR
 ==================
 1. git clone https://github.com/valeriacy/MoonSoft.git
-2. cd moonSoft
+2. cd moonSoft/proyecto
 3. composer install
-4. copy .env.example .env ..
-5. En el nuevo archivo creado .env configurar la conexion con mysql (nombre de la BD, usuario y contraseña) ..
-6. php artisan migrate ..
+4. copy .env.example .env
+5. En el nuevo archivo creado .env configurar la conexion con mysql (nombre de la BD, usuario y contraseña)
+6. php artisan migrate
 7. php artisan key:generate
 8. **Para levantar el servidor:** php artisan serve
 

@@ -17,7 +17,7 @@ Capybara.app_host = ENV["CAPYBARA_HOST"]
 # Set the time (in seconds) Capybara should wait for elements to appear on the page
 Capybara.default_max_wait_time = 60
 Capybara.default_driver = :selenium
-Capybara.app_host = "https://ucbcba-correccion-formato.herokuapp.com/"
+Capybara.app_host = "http://localhost:8000"
 
 class CapybaraDriverRegistrar
   # register a Selenium driver for the given browser to run on the localhost

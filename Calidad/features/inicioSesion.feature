@@ -1,13 +1,14 @@
-Feature: Login into system
-   As a User
-   I want to login into the system
-   So I can read the children letters
+# language: es
+Característica: Ingresar al sistema
+   Como un usuario
+   Quiero ingresar al sistema
+   Para poder revisar las cartas recibidas
 
-   Scenario: Login into system
-    Given I am on the homepage
-    When I click on "Iniciar sesion" link
-    And I fill the mail field with "valecy@gmail.com"
-    And I fill the password field with "valeria"
-    And I click on "Aceptar" button
-    Then I see the "Bienvenido" title
+   Escenario: Ingresar al sistema
+    Dado que estoy en la pagina principal
+    Cuando presiono sobre el enlace "Iniciar sesion"
+    Y lleno el campo de correo electronico con "valecy@gmail.com"
+    Y lleno el campo de contraseña con "valeria"
+    Y presiono el boton "Aceptar"
+    Entonces veo el titulo "Bienvenido"
 

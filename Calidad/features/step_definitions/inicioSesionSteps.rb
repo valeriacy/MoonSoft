@@ -9,3 +9,8 @@ Then("I see the system name") do
     	raise "System name should be Mensajero"	
     end
 end
+
+When("I click on {string} button") do |string|
+    click_button(string)
+end
+

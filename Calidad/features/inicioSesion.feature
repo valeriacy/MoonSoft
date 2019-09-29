@@ -1,8 +1,10 @@
-Feature: Get to main page
+Feature: Login into system
    As a User
-   I want to see the main page
-   So I feel welcome to the system
+   I want to login into the system
+   So I can read the children letters
 
-   Scenario: Getting into main page
-    Given I am on the homepage  
-    Then I see the system name
+   Scenario: Login into system
+    Given I am on the homepage
+    When I click on "iniciar sesion" button
+    Then I see the "Bienvenido" title
+

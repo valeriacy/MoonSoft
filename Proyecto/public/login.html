@@ -1,19 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Mensajero</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <div class="jumbotron text-center">
-        <img src="../imagenes/logo.jpg" class="img-thumbnail img-responsive" alt="Cinque Terre" width="304" height="236 ">
-        <h1>Mensajero</h1>
-    </div>
-</head>
-
-<body>
+<div class="jumbotron text-center">
+    <img src="../imagenes/logo.jpg" class="img-thumbnail img-responsive" alt="Cinque Terre" width="304" height="236">
+    <h1>Mensajero</h1>
+  </div>
     <div class="container">
         <ul class="nav nav-tabs" role="tablist">
             <li><a href="publica.html">Escribir Carta</a></li>
@@ -28,12 +16,12 @@
             <h2>Iniciar sesion</h2>
             <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input type="email" class="form-control" id="email" placeholder="Ingrese Correo Electronico" name="email">
+                    <input type="email" class="form-control" placeholder="Ingrese Correo Electronico" name="email" id="correo">
                 </div>
                 <br>
                 <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                    <input type="password" class="form-control" id="pwd" placeholder="Ingrese contraseña" name="pwd">
+                    <input type="password" class="form-control" placeholder="Ingrese contraseña" name="pwd" id="contrasenha">
                 </div>
               </br>
                            
@@ -41,7 +29,7 @@
                 <label>¿Aun no tienes cuenta? </label><a href="registro.html"> Registrate</a>
             </div>
             <br>
-            <button type="button" class="btn btn-primary">Aceptar</button>
+            <button type="button" class="btn btn-primary" ng-click="entrar()" >Aceptar</button>
             <button type="button" class="btn btn-danger">Cancelar</button>
         </br>
         <div class="form-group text-center">
@@ -58,6 +46,3 @@
               <a href="#"> MoonSoft.SRL</a>
             </div>
           </footer>
-</body>
-
-</html>

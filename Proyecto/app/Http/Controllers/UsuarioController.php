@@ -56,6 +56,16 @@ class UsuarioController extends Controller
         //
     }
 
+    public function verify(Request $request)
+    {
+        $correo = $request->correo;
+        $usuario = Usuario::where("correo", $correo)->get()->first();;
+        $contraMandada = $request->contrasenha;
+        return response()->json([
+            'correcto' => $contraMandada == $usuario->contrasenha
+        ]);
+    }
+
     /**
      * Show the form for editing the specified resource.
      *

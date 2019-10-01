@@ -15,7 +15,7 @@
       </div>
       <div class="form-group">
         <label for="nombre">Teléfono:</label>
-        <input type="input" class="form-control" id="telefono" placeholder="Teléfono" name="telefono" required>
+        <input type="number" class="form-control" id="telefono" placeholder="Teléfono" name="telefono" required minlength="8">
       </div>
       <div class="form-group">
         <label for="nombre">Profesión:</label>
@@ -28,13 +28,14 @@
       <br>
       <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-        <input type="password" class="form-control" id="contraseña" placeholder="Ingrese contraseña" name="pwd" required>
+        <input type="password" class="form-control" id="contraseña" placeholder="Ingrese contraseña" name="pwd" required minlength="4">
       </div>
       </br>
       <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
         <input type="password" class="form-control" id="pwd-repeat" placeholder="Confirmar contraseña"
-          name="repetir contraseña" required>
+          name="repetir contraseña" required minlength="4">
+          
       </div>
       <br>
       <button type="submit" id="aceptarRegistro" class="btn btn-primary">Aceptar</button>

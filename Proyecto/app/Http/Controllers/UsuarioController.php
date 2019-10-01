@@ -39,9 +39,9 @@ class UsuarioController extends Controller
         $usuario->nombre_completo = $request->nombre_completo;
         $usuario->contrasenha = $request->contrasenha;
         $usuario->profesion = $request->profesion;
-        $usuario->profesion = $request->correo;
-        $usuario->profesion = $request->telefono;
-        $usuario->profesion = $request->direccion;
+        $usuario->correo = $request->correo;
+        $usuario->telefono = $request->telefono;
+        $usuario->direccion = $request->direccion;
         $usuario->save();
     }
 

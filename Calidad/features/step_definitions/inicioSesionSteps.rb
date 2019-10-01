@@ -22,6 +22,10 @@ Cuando("presiono el boton {string}") do |boton|
     click_button(boton)
     sleep(2)
 end
+
+Cuando("lleno el campo {string} con {string}") do |selector, contenido|
+    fill_in(selector, :with => contenido)
+end
   
 Entonces("veo el titulo {string}") do |titulo|
     in_page_title = find('h1')

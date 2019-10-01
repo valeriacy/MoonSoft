@@ -69,12 +69,12 @@ function welcomeCtrl($scope, $location, $http){
 
 function registroCtrl($scope, $location, $http){
     $scope.registrar = () => {
-        nombreCompleto = document.querySelector("#nombreAp").value;
+        nombreCompleto = document.querySelector("#nombre").value;
         direccion = document.querySelector("#direccion").value;
         telefono = document.querySelector("#telefono").value;
         profesion = document.querySelector("#profesion").value;
         email = document.querySelector("#email").value;
-        contrasenha = document.querySelector("#pwd").value;
+        contrasenha = document.querySelector("#contraseña").value;
 
         nuevo_usuario = {
             nombre_completo : nombreCompleto,

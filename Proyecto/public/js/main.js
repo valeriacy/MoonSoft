@@ -98,7 +98,7 @@ function registroCtrl($scope, $location, $http){
             req, 
             (response)=>{
                 if(response.status == 200){
-                    alert("Nuevo usuario registrado")
+                    $location.path("/")
                 }
             },
             (error)=>{
